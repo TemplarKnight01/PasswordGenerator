@@ -1,0 +1,11 @@
+html, #container-index{
+	background: black
+}
+#container-index .container button{
+	margin: 1em 0;
+}
+#container-index .container input{
+	font-size: 40px;
+	padding: 0;
+	text-align: center
+}
