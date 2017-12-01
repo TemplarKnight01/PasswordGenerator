@@ -8,7 +8,7 @@ $(document).ready(function(){
   		}*/
   		var alfa_caracteres = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z"];
 		new_pass = "";
-		for(y=0;y<4;y++){
+		for (y=0;y<4;y++){
 			new_pass += alfa_caracteres[Math.floor(Math.random()*alfa_caracteres.length)];
 		}
 		$("#passgenerator").val(new_pass);
