@@ -1,8 +1,14 @@
+*{
+	color:#FFF;
+}
 html, #container-index{
-	background: black
+	background: black;
+	margin-top: 5px
 }
 #container-index .container button{
 	margin: 1em 0;
+	padding: .5rem 1rem;
+	font-size: 1.25rem
 }
 #container-index .container input{
 	font-size: 40px;

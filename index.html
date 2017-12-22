@@ -13,13 +13,29 @@
   <body>
     <div id="container-index">
       <div class="container">
-        <div class="row">
-          <div class="col-6 offset-3">
-            <input type="text" name="" id="passgenerator" disabled="true" class="passwordcontainer form-control">
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="generar">Generar Contraseña <i class="fa fa-hand-o-up"></i>
-            </button>
-          </div> 
-        </div> 
+        <form>
+          <div class="form-row">
+            <div class="col-md-6 offset-md-3 col-sm-12">
+              <input type="text" name="" id="passgenerator" class="passwordcontainer form-control" readonly>
+              <button type="button" class="btn btn-primary btn-block" id="generar">Generar Contraseña <i class="fa fa-hand-o-up"></i>
+              </button>
+            </div> 
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="selector_tamano">Tamaño de Contraseña</label>
+              <select id="selector_tamano" class="form-control">
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9" selected>9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+        </form> 
       </div>
     </div>    
     <!-- Optional JavaScript -->

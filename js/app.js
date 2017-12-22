@@ -1,16 +1,29 @@
 $(document).ready(function(){
 	$("#generar").click(function(){
-		/*
-		var caracteres = "abcdefghijkmnpqrtuvwxyzABCDEFGHIJKLMNPQRTUVWXYZ2346789@_.-,{}?¡¿=()/&%$#";
-  		var contraseña = "";
-  		for (i=0; i<10; i++) {
-  			contraseña += caracteres.charAt(Math.floor(Math.random()*caracteres.length));
-  		}*/
-  		var alfa_caracteres = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z"];
-		new_pass = "";
-		for (y=0;y<4;y++){
-			new_pass += alfa_caracteres[Math.floor(Math.random()*alfa_caracteres.length)];
-		}
-		$("#passgenerator").val(new_pass);
-	})
+		// Definiendo arreglo de caracteres.
+		//De 0 a 18 simbolos.
+		//De 19 a 44 minúsculas.
+		//De 45 a 70 mayúsculas.
+		//De 71 a 80 números.
+  		var all_caracteres = ["#","$","=","@","-","_","/","%","&","+","<",">","!","¡","*","(",")","[","]",
+  							"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
+  							"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+  							"0","1","2","3","4","5","6","7","8","9"];
+  		//Definiendo tamaño de contraseña a generar, por "select" en index.
+  		var tamano_pass = $("#selector_tamano").val();
+  		//Variable donde se almacenara la contraseña generada.
+  		var new_pass = "";  		
+  		
+  		//Función que generar la contraseña con todos los caracteres.
+  		function Generar_pass(){
+  			for(y=0; y<tamano_pass; y++){
+  				var caracter_generado = all_caracteres[Math.floor(Math.random()*all_caracteres.length)];
+  				new_pass += caracter_generado;
+  			}
+  			//Imprimiendo en pantalla.
+  			$("#passgenerator").val(new_pass);
+  		}
+
+  		Generar_pass();
+	});
 })
