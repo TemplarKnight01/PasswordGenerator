@@ -12,8 +12,14 @@ $(document).ready(function(){
   		//Definiendo tamaño de contraseña a generar, por "select" en index.
   		var tamano_pass = $("#selector_tamano").val();
   		//Variable donde se almacenara la contraseña generada.
-  		var new_pass = "";  		
-  		
+  		var new_pass = "";
+  		//Variables de selección de inclución de caracteres.
+  		var select_num = $(".check-num").prop('checked');
+  		var select_minus = $(".check-minus").prop('checked');
+  		var select_mayus = $(".check-mayus").prop('checked');
+  		var select_sims = $(".check-sims").prop('checked');
+  		var select_all = $(".check-all").prop('checked');
+
   		//Función que generar la contraseña con todos los caracteres.
   		function Generar_pass(){
   			for(y=0; y<tamano_pass; y++){
