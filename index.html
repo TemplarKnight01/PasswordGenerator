@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Passeord Generator</title>
+    <title>Password Generator</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,50 +21,72 @@
               </button>
             </div> 
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-2">
-              <label for="selector_tamano">Tamaño de Contraseña</label>
-              <select id="selector_tamano" class="form-control">
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9" selected>9</option>
-                <option value="10">10</option>
-              </select>
-            </div>
-            <div class="form-check form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input check-num" type="checkbox" name="" value="nums">
-                Incluir números
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input check-minus" type="checkbox" name="" value="minus">
-                Incluir minúsculas
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input check-mayus" type="checkbox" name="" value="mayus">
-                Incluir mayúsculas
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input check-sims" type="checkbox" name="" value="sims">
-                Incluir símbolos
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input check-all" type="checkbox" name="" value="all">
-                Todos los caracteres
-              </label>
-            </div>
+          <div class="form-group row">
+              <label for="selector_tamano" class="col-sm-2 col-form-label">Tamaño de Contraseña</label>
+              <div class="col-sm-10">
+                <select id="selector_tamano" class="form-control">
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9" selected>9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
           </div>
+            <div class="form-group row">
+            <!--<div class="form-check form-check-inline">-->
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label col-form-label">
+                    <input class="form-check-input check-num" type="checkbox" name="" value="nums">
+                    Incluir números
+                  </label>
+                </div>
+              </div>
+             </div> 
+            <!--</div>-->
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label col-form-label">
+                    <input class="form-check-input check-minus" type="checkbox" name="" value="minus">
+                    Incluir minúsculas
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label col-form-label">
+                    <input class="form-check-input check-mayus" type="checkbox" name="" value="mayus">
+                    Incluir mayúsculas
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label col-form-label">
+                    <input class="form-check-input check-sims" type="checkbox" name="" value="sims">
+                    Incluir símbolos
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input check-all" type="checkbox" name="" value="all">
+                    Todos los caracteres
+                  </label>
+                </div>
+              </div>
+            </div>
         </form> 
       </div>
     </div>    
